@@ -1,0 +1,31 @@
+# No 1 #
+// Membuat database akademik
+CREATE DATABASE akademik;
+SHOW DATABASES;
+USE akademik;
+
+// Membuat table mahasiswa
+CREATE TABLE mahasiswa
+    -> (nim varchar(5),
+    -> nama varchar(50),
+    -> jkel varchar(1),
+    -> alamat text,
+    -> tgllhr date,
+    -> primary key (nim));
+    
+    
+ # No 2 #
+ // Menambahkan data dalam table mahasiswa
+ INSERT INTO mahasiswa VALUES
+    -> ('MHS01','Siti Aminah','P','SOLO','1995-10-01'),
+    -> ('MHS02','Rita','P','SOLO','1999-01-01'),
+    -> ('MHS03','Amirudin','L','SEMARANG','1998-08-11'),
+    -> ('MHS04','Siti Maryam','P','JAKARTA','1995-04-15');
+   
+   
+  # No 3 #
+  // Menampilkan semua data dalam table mahasiswa
+  SELECT * FROM mahasiswa;
+  
+  // Menampilkan data mahasiswa dengan alamat SOLO
+  SELECT * FROM mahasiswa WHERE alamat='SOLO';
